@@ -1,5 +1,4 @@
-import farm.Barn;
-import farm.Garden;
+package farm;
 
 public class Farm {
     private double area;
