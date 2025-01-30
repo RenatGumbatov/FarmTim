@@ -6,10 +6,12 @@ import java.util.HashSet;
 public class Garden {
     private int maxOfTypes = 5;
     private ArrayList<Flower> flowers;
+    private Farm farm;
 
     public void plantFlower(int choice) {
-        if (amountOfFlowerTypesPlanted() <= maxOfTypes) {
-            flowers.add(Flower.createFlower(choice));
+        Flower flowerToAdd = Flower.createFlower(choice);
+        if (amountOfFlowerTypesPlanted() <= maxOfTypes && farm.getArea()-flowerToAdd.getNeededArea() >= 0) {
+            flowers.add(flowerToAdd);
         }
     }
 

@@ -33,4 +33,8 @@ public abstract class Flower {
             default -> null;
         };
     }
+
+    public double getNeededArea() {
+        return neededArea;
+    }
 }
