@@ -1,4 +1,4 @@
-package animals;
+package farm.animals;
 
 public enum Size {
     BIG, SMALL

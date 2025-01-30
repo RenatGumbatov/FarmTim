@@ -1,4 +1,6 @@
-import animals.Animal;
+package farm;
+
+import farm.animals.Animal;
 
 import java.util.ArrayList;
 

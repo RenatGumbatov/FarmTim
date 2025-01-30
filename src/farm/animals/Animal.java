@@ -1,4 +1,4 @@
-package animals;
+package farm.animals;
 
 public abstract class Animal {
 
@@ -9,7 +9,7 @@ public abstract class Animal {
 
     @Override
     public String toString() {
-        return "animals.Animal{" +
+        return "farm.animals.Animal{" +
                 "type='" + type + '\'' +
                 ", name='" + name + '\'' +
                 ", size=" + size +

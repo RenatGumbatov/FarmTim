@@ -1,4 +1,6 @@
-import flowers.Flower;
+package farm;
+
+import farm.flowers.Flower;
 
 import java.util.ArrayList;
 import java.util.HashSet;
