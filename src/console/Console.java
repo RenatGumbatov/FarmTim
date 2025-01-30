@@ -1,5 +1,7 @@
 package console;
 
+import java.util.Scanner;
+
 public class Console {
     /*
     1. Manage flowers
@@ -39,4 +41,17 @@ public class Console {
     2. Add animal
     3. Remove animal
      */
+
+    public int nextInt(int min, int max) {
+        int result;
+        Scanner scanner = new Scanner(System.in);
+        while (true) {
+            try {
+                result = scanner.nextInt();
+                if (min <= result && result <= max) return result;
+            } catch (Exception ignored) {
+                scanner = new Scanner(System.in);
+            }
+        }
+    }
 }
