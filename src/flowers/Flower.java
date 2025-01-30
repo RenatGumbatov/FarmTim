@@ -17,4 +17,15 @@ public abstract class Flower {
                 '}';
     }
 
+    static public Flower createFlower(int choice) {
+        return switch (choice) {
+            case 1 -> new Flower1();
+            case 2 -> new Flower2();
+            case 3 -> new Flower3();
+            case 4 -> new Flower4();
+            case 5 -> new Flower5();
+            case 6 -> new Rose();
+            default -> null;
+        };
+    }
 }
