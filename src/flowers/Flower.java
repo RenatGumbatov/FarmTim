@@ -6,6 +6,7 @@ public abstract class Flower {
     protected double price;
     protected double neededArea;
     protected double chanceOfGrowth;
+    protected double wateringGrowthBonus;
 
     @Override
     public String toString() {
@@ -15,6 +16,10 @@ public abstract class Flower {
                 ", neededArea=" + neededArea +
                 ", chanceOfGrowth=" + chanceOfGrowth +
                 '}';
+    }
+
+    public void waterFlower() {
+        chanceOfGrowth += wateringGrowthBonus;
     }
 
     static public Flower createFlower(int choice) {
